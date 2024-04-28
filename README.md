@@ -1,5 +1,5 @@
 <h1 align="center"> MindScape </h1>
-<h3 align="center"> "Navigate the landscape of your mind with MindScape - Your Companion to Mental Well-being."
+<h3 align="center"> Navigate the landscape of your mind with MindScape - Your Companion to Mental Well-being.
  </h3>
 <p align="center">
     <br />
