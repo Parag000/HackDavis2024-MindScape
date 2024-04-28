@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meditate with Me</title>
+  <!-- Linking the CSS Files -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Linking the fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <figure class="clock">
+      <audio src="http://soundbible.com/mp3/service-bell_daniel_simion.mp3"></audio>
+      <img src="medidateAnimated.gif" alt="">
+      <svg class="progress-ring" height="800" width="800">
+        <circle class="progress-ring__circle" stroke-width="10" fill="transparent" r="300" cx="400" cy="400" />
+      </svg>
+    </figure>
+    <div class="container">
+      <div class="time">
+        <span class="mins">0</span>
+        <span>:</span>
+        <span class="secs">00</span>
+      </div>
+      <div class="btn-group">
+        <button class="start button">Zen Mode</button>
+        <button class="reset button">reset</button>
+        <button class="pause button">pause</button>
+      </div>
+      <button class="button" id="goBack">Go Back to Home Page</button>
+    </div>
+  </div>
+</body>
+<script>
+  document.getElementById('goBack').addEventListener('click',()=>{
+     window.history.back();
+  })
+</script>
+<script src="setting.js"></script>
+<script src="progress.js"></script>
+<script src="timer.js"></script>
+
+</html>

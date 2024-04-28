@@ -1,0 +1,94 @@
+:root {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+  
+    /* Colors */
+    --eggshell: #F5F5F5;
+    --aeroBlue: #82B3AE;
+    --powderBlue: #AFC9C3;
+    --blackCoral: #2F4F4F;
+    --brown: #09293e;
+    --primarySoftRed: #E86363;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url(bgFinal.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+
+.logo h1{
+    font-size: 2.2rem;
+    margin: 0;
+    color: var(--brown);
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 1rem;
+    background-color: white;
+}
+
+.slideContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2rem;
+    flex-direction: column;
+}
+
+.sectionHeading{
+    font-size: 3rem;
+    background-color: rgba(255, 255, 255, 0.795);
+    letter-spacing: 4px;
+}
+
+.information{
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: white;
+    background-color: var(--powderBlue);
+    border-radius: 20px;
+    padding: 2rem;
+    max-height: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.button{
+    cursor: pointer;  
+     margin: 0.3rem;
+     background-color: var(--brown);
+     border-radius: 30px;
+     font-size: 1.4rem;
+     font-weight: 700;
+     padding: 0.6rem 2rem;
+     font-family: inherit;
+     border: none;
+     color: white;
+     transition:0.2s;
+}
+
+.button:hover{
+    background-color:var(--powderBlue);
+    transform: scale(1.05);
+  }
+
+.button:hover{
+    transform: scale(1.1);
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
+#goBack{
+    display: none;
+}

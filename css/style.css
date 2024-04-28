@@ -1,0 +1,674 @@
+
+:root {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+
+  /* Colors */
+  --eggshell: #F5F5F5;
+  --aeroBlue: #82B3AE;
+  --powderBlue: #AFC9C3;
+  --blackCoral: #2F4F4F;
+  --brown: #09293e;
+  --primarySoftRed: #E86363;
+}
+
+html{
+scroll-behavior: smooth;
+}
+
+body{
+  padding: 0rem;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  margin: 2.5rem 8rem;
+  flex-wrap: wrap;
+}
+
+.logo h2{
+    font-size: 2.2rem;
+    margin: 0;
+    color: var(--brown);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.logo h2:hover{
+    transform: scale(1.1);
+}
+
+/*//////////////////// Hamburger Icon //////////////////////////////////////*/
+.hamburgerIcon{
+  display: none;
+}
+
+.bar1,.bar2,.bar3{
+  height: 4px;
+  width: 1.5rem;
+  background-color: black;
+  margin: 5px 0px;
+  transition: 0.2s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-7px, -8px);
+}
+
+
+/* /////////////////////////////////////////// Navlist //////////////////////////////////////////////*/
+
+.navlist{
+  margin: 0 auto 0 0; 
+  display: flex;
+  margin-top: 0;
+}
+
+.listItem{
+  list-style: none;
+  padding: 0 1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--blackCoral);
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.listItem a{
+  text-decoration: none;
+  color: var(--blackCoral);
+}
+
+.listItem a:hover{
+  color: black;
+  cursor: pointer;
+}
+
+/* /////////////////////////////////////////// Navlist Buttons //////////////////////////////////////////////*/
+
+.navbarButtons{
+   border: none;
+   background-color: transparent;
+   color: var(--blackCoral);
+   font-family: inherit;
+   font-size: 1.2rem;
+   font-weight: 700;
+   padding: 0.2rem 1.4rem;
+   margin: 0.3rem;
+   transition: 0.2s;
+   border-radius: 30px;
+}
+
+.navbarButtons:hover{
+   cursor: pointer;
+   background-color: var(--brown);
+   color: white;
+   transform: scale(1.05);
+}
+
+/* Media Query for handling hamburger icon and navlist */
+@media only screen and (max-width:1045px){
+  .navbar{
+    justify-content: space-between;
+    margin: 2rem;
+  }
+
+  .navlist{
+    display: none;
+  }
+
+  .buttons{
+    display: none;
+  }
+
+  .hamburgerIcon{
+    display: block;
+    cursor: pointer;
+  }
+
+  .show .buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid var(--eggshell);
+    background-color: var(--blackCoral);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .show .buttons a {
+    color: white;
+  }
+
+  .show .buttons .navbarButtons{
+    font-size: 1.2rem;
+    margin: 1rem 4rem;
+    color: white;
+  }
+
+  .show .navlist{
+    display: block;
+    position: relative;
+    background-color:var(--blackCoral);
+    text-align: center;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 1;
+    padding-left: 0;
+  }
+
+  .show .navlist .listItem{
+    font-size: 1.2rem;
+    margin: 2rem;
+    justify-content: center;
+  }
+
+  .show .navlist .listItem a{
+    color: white;
+  }
+
+  .show .navlist .listItem a:hover{
+    color: var(--brown);
+  }
+
+}
+
+/* /////////////////////////////////////////// Banner //////////////////////////////////////////////////////*/
+
+.header{
+  display: flex;
+  margin: 2rem 4rem;
+  padding: 1rem 0rem;
+  align-items: center;
+}
+
+.colored{
+    color: var(--brown);
+}
+
+.content h1{
+  font-size: 5rem;
+  line-height: 99px;
+  margin-bottom: 0px;
+  font-weight: 700;
+  color: var(--blackCoral);
+  letter-spacing: -6px;
+}
+
+.content {
+  padding: 0rem 4.5rem;
+}
+
+.content p{
+  color: var(--blackCoral);
+  padding: 0rem 3rem 0rem 0rem;
+  font-size: 1rem;
+}
+
+.illustration img{
+  width: 40rem;
+  margin-left: -9rem;
+  margin-right: -92px;
+}
+
+.getStarted{
+   cursor: pointer;  
+   margin: 0.3rem;
+   background-color: var(--brown);
+   border-radius: 30px;
+   font-size: 1.4rem;
+   font-weight: 700;
+   padding: 0.6rem 2rem;
+   font-family: inherit;
+   border: none;
+   color: white;
+   transition:0.2s;
+}
+.getStarted a{
+  text-decoration: none;
+  color: white;
+}
+.getStarted:hover{
+  background-color:var(--powderBlue);
+  transform: scale(1.05);
+}
+
+/* Media Query for handling header illustration and content */
+
+@media only screen and (max-width:1250px){
+   .header{
+     flex-wrap: wrap-reverse;
+     justify-content: center;
+     margin: 2rem 2rem;
+   }
+   .illustration{
+     margin-right: 0;
+   }
+   .content{
+     text-align: center;
+   }
+}
+
+@media only screen and (max-width:875px){
+  .illustration img{
+    width: 20rem;
+  }
+  .content{
+    padding: 0rem;
+  }
+  .content h2{
+    font-size: 2.7rem;
+    line-height: 60px;
+  }
+  .content p{
+    padding: 0;
+  }
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////// Feautures Section //////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.sectionIntro{
+  display: flex;
+  justify-content: center;
+}
+
+.sectionIntroContainer{
+    width: 30rem;
+}
+
+.sectionIntroContainer h2{
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--brown);
+    letter-spacing: -1px;
+}
+
+.sectionIntroContainer p{
+     text-align: center;
+     color: var(--blackCoral);
+}
+
+#cards{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.cardsTag{
+    margin: 0px -2px;
+    border-bottom: 2px solid hsl(229, 8%, 60%);
+    color: hsl(228, 6%, 34%);
+    padding: 1.3rem 3.5rem;
+    cursor: pointer;
+    font-weight: 420;
+    display: inline-block;
+    width: 12rem;
+    text-align: center;
+}
+
+.cardsTag:hover{
+   color: var(--primarySoftRed);
+}
+
+.redBorder{
+    border-bottom: 4px solid var(--brown);
+}
+
+#cardsContent{
+    display: flex;
+    justify-content: center;
+}
+
+.illustrationsTab img{
+    width: 33rem;
+}
+.intro{
+    width: 30rem;
+}
+.card{
+    display: none;  
+    align-items: center;
+}
+
+.default{
+  display: flex;
+}
+
+.defaultSwitch{
+    border-bottom: 4px solid var(--brown);
+} 
+
+/* Media Queries for Activities Section */
+@media only screen and (max-width:1056px){
+  .card{
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  }
+  #cards{
+    text-align: center;
+  }
+  .intro{
+    width: auto;
+    margin: 2rem;
+  }
+}
+
+@media  only screen and (max-width:880px){
+.sectionIntroContainer{
+    width: 18rem;
+}
+.sectionIntroContainer p{
+    margin: 1rem;
+}
+}
+
+/* From Tablets and Kindles */
+
+@media only screen and (max-width:863px){
+.illustration img{
+    width: 30rem;
+    margin: 0;
+}
+}
+
+/* For Large Screen Mobile Devices */
+
+@media only screen and (max-width:663px){
+.illustration img{
+    width: 22rem;
+}
+.illustrationsTab img{
+    width: 22rem;
+}
+.illustrationsTab{
+    width: 23rem;
+}
+}
+
+/* For small screen mobile Devices */
+
+@media only screen and (max-width:508px){
+.illustration{
+    width: 25rem;
+    background-position-y: 0rem;
+    background-position-x: 0rem;
+}
+.illustration img{
+    width: 20rem;
+    margin: 0rem 0rem 0rem 0rem;
+}
+.illustrationsTab img{
+    width: 20rem;
+    margin-left: 3rem;
+}
+.illustrationsTab{
+    width: 23rem;
+}
+}
+
+/* For Mobile Devices */
+
+@media only screen and (max-width:434px){
+.illustration{
+    width: 20rem;
+    background-position-y:3rem;
+    background-position-x: 1rem;
+}
+.illustrationsTab img{
+    width: 16rem;
+}
+.illustrationsTab{
+    width: 18rem;
+    background-position-y: 1rem;
+}
+}
+
+/* ///////////////////////////////////// More Info Section ////////////////////////////////////////////////*/
+
+#middle{
+margin-top: 3rem;
+margin-bottom: 3rem;
+}
+
+.contentContainers{
+ display: grid;
+ grid-template-areas: 
+ 'writing writing image';
+ margin: 2.4rem 6.2rem;
+ border-radius: 1.5rem;
+ box-shadow:0 0 12px rgb(206, 197, 197);
+}
+
+.contentContainers h2{
+ font-family: 'Poppins', sans-serif;
+ margin-bottom: 0;
+ color: var(--brown);
+ font-size: 3rem;
+}
+
+.contentContainers p{
+ color: var(--blackCoral);
+}
+
+#rightAlign{
+ grid-template-areas: 
+ 'image writing writing';
+}
+
+.illustrations{
+ grid-area: image;
+ padding: 2rem 3rem;
+ margin: 0 0 0 0;
+}
+
+.illustrations img{
+ width: 21rem;
+}
+
+.writing{
+ grid-area: writing;
+ box-sizing: border-box;
+ margin: 1rem;
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////For Tablet Screens ////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@media only screen and (max-width:1275px){
+.contentContainers,#rightAlign{
+    grid-template-areas:
+    'image image image'
+    'writing writing writing';
+    text-align: center;
+}
+.contentContainers p{
+  margin: 1rem;
+}
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////For midrange Screens ////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@media only screen and (max-width:900px){
+.introContainer img{
+    padding: 0;
+    width: 19rem;
+}
+.contentContainers{
+    margin-right:  1rem;
+    margin-left: 1rem;
+}
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////For small Screens ////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@media only screen and (max-width:600px) {
+    .introContent{
+        padding: 3rem 0.6rem;
+    }
+    .introContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contentContainers{
+        margin-right:  1rem;
+        margin-left: 1rem;
+    }
+    .writing{
+        padding: -0.2px;
+        margin: 0;
+    }
+    .illustrations img{
+        width: 12rem;
+    }
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////// Contact Section ///////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////*/
+
+#contact{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: relative;
+color: white;
+padding: 3rem 0 1rem;
+}
+
+#contact::before{
+content: "";
+background-color: var(--brown);
+width: 100%;
+height: 100%;
+position: absolute;
+z-index: -1;
+}
+
+.contactContainer{
+width: 38%;
+}
+
+.contactContainer p{
+text-transform: uppercase;
+color: white;
+letter-spacing: 3px;
+font-size: 0.7rem;
+text-align: center;
+}
+
+.contactContainer h2{
+text-align: center;
+font-size: 2rem;
+font-weight: 500;
+}
+
+#emailId{
+padding: 0.8rem 1rem;
+width: 12rem;
+border: none;
+font-family: inherit;
+border-radius: 5px;
+margin: 1rem 0.5rem;
+}
+
+#emailId::placeholder{
+color: var(--blackCoral)
+}
+
+.contactForm img{
+position: relative;
+margin: 0px 20px -4px -42px;
+display: none;
+}
+
+#contactUs{
+padding: 0.8rem 1rem;
+}
+
+.contactForm p{
+font-size: 0.7rem;
+margin: -13px 0px 0px 20px;
+display: none;
+position: relative;
+z-index: 1;
+}
+
+.blackBtn{
+   cursor: pointer;  
+   margin: 0.3rem;
+   background-color: var(--blackCoral);
+   border-radius: 30px;
+   font-size: 1rem;
+   font-weight: 700;
+   padding: 0.6rem 2rem;
+   font-family: inherit;
+   border: none;
+   color: white;
+   transition:0.2s;
+}
+
+.blackBtn:hover{
+ background-color: var(--powderBlue);
+}
+
+footer{
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: var(--brown);
+}
+
+.attributions span{
+margin: 1rem 0;
+color: white;
+}
+
+.attributions span a{
+text-decoration: none;
+color: black;
+cursor: pointer;
+}
+
+.socialIcons{
+text-align: center;
+}
+
+.socialIcons svg{
+width: 2rem;
+margin: 1rem 2rem;
+fill: white;
+cursor: pointer;
+}
+
+.socialIcons svg:hover{
+fill: var(--blackCoral);
+}

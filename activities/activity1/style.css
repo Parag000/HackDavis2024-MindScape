@@ -1,0 +1,94 @@
+
+:root {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+
+  /* Colors */
+  --eggshell: #F5F5F5;
+  --aeroBlue: #82B3AE;
+  --powderBlue: #AFC9C3;
+  --blackCoral: #2F4F4F;
+  --brown: #09293e;
+  --primarySoftRed: #E86363;
+}
+
+body{
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-image: url(/img/bg-faded.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.clock {
+    padding:6rem 0;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    height: 60vh;
+    font-size: 4rem;
+    color: var(--brown);
+    margin: 0;
+  }
+  
+  .clock img{
+    border-radius: 50%;
+  }
+
+  .progress-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .progress-ring__circle {
+    transition: 0.5s;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke: var(--brown);
+  }
+
+  .container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-size: 3rem;
+      color: var(--blackCoral);
+      padding: 1rem;
+  }
+  
+  .button{
+    cursor: pointer;  
+    margin: 0.3rem;
+     background-color: var(--brown);
+     border-radius: 30px;
+     font-size: 1.4rem;
+     font-weight: 700;
+     padding: 0.6rem 2rem;
+     font-family: inherit;
+     border: none;
+     color: white;
+     transition:0.2s;
+  }
+  .button:hover{
+    transform: scale(1.1);
+  }
+  @keyframes pulse {
+    0%,
+    100% {
+      transform: rotate(-90deg) scale(1.1);
+    }
+    50% {
+      transform: rotate(-90deg) scale(1.05);
+    }
+    75% {
+      transform: rotate(-90deg) scale(0.8);
+    }
+  }
+  
