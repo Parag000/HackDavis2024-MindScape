@@ -1,0 +1,6 @@
+flask
+gunicorn
+pandas
+numpy
+tensorflow
+librosa
