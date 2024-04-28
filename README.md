@@ -13,10 +13,6 @@
 
 </p>
 
-## Tech Stack
-- HTML
-- CSS
-- JavaScript
 
 ## Features
 - **Personalized Stress Management Plans**: Tailored strategies to manage stress and anxiety.
