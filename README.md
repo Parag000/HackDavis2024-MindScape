@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="img/icon.png" width= 150px height= 150px>
-</p>
 <h1 align="center"> MindScape </h1>
 <h3 align="center"> "Navigate the landscape of your mind with MindScape - Your Companion to Mental Well-being."
  </h3>
