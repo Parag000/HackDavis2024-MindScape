@@ -4,7 +4,7 @@
 <p align="center">
     <br />
     <br />
-    <a href="https://parag000.github.io/MindScape/">View Demo</a>
+    <a href="https://parag000.github.io/HackDavis2024-MindScape/">View Demo</a>
   </p>
 </p>
 
