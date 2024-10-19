@@ -5,7 +5,7 @@
     <br />
     <br />
     <a href="https://parag000.github.io/HackDavis2024-MindScape/">View Demo</a>
-    <img src="img/display.png" alt="description of image" width="600" height="400">
+    <img src="img/display.png" alt="description of image" style="width: 100%; height: auto;">
   </p>
 </p>
 
